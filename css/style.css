@@ -1,0 +1,265 @@
+/* Background images */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.backgr-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+/* Navigation Bar */
+.mycontainer {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+}
+
+.navbar-brand {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.logo-text {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navb {
+    padding: 0 4rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    margin: 0;
+    border: 0.5px solid #fff;
+    border-radius: 10px;
+}
+
+.links {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 15px 40px;
+    color: #fff;
+}
+
+.links:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.25s ease;
+}
+
+/* Title */
+
+.text-title {
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.head-text1 {
+    font-family: 'EB Garamond', serif;
+    padding-top: 3rem;
+    font-size: 5rem;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.head-text2 {
+    padding-top: 3rem;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.buy-btn {
+    color: #000;
+    font-weight: 500;
+    padding:0.7rem 4rem;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+}
+
+/* Hero Section */
+#hero-section {
+    text-align: left;
+    margin: 5rem 0 0 0;
+    padding: 5rem 0;
+    background-color: #E1D7C6;
+    height: fit-content;
+}
+
+.hero-title {
+    font-family: 'EB Garamond', serif;
+    margin: 0 3rem;
+    font-size: 3rem;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
+}
+
+.card {
+    border: none;
+    background-color: #E1D7C6;
+}
+
+.row-img {
+    padding: 3rem 2rem;
+}
+
+.khung {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    border: 1px solid #D0B8A8;
+    background-color: #e1c8a8;
+    overflow: hidden;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.hero-img:hover {
+    transform: scale(1.1);
+    transition: all 0.35s;
+}
+.card-body {
+    background-color: #E1D7C6;
+    font-family: 'EB Garamond', serif;
+}
+
+.card-title {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.card-text-sale {
+    color: #000;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.shopbtn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.tag-img-new {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 6rem;
+    height: 1.5xrem;
+    background-color: #3C6255;
+}
+
+.tag-img-hot {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 6rem;
+    height: 1.5xrem;
+    background-color: orange;
+}
+
+/* Footer Section */
+
+#myfooter {
+    padding: 4rem 0;
+    background-color: #D0B8A8;
+}
+
+.footer-logo {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.footer-row {
+    padding: 0 8rem;
+}
+
+.ico-list {
+    justify-content: space-between;
+}
+
+.footer-icon {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 2rem;
+}
+
+.footer-text {
+    width: 50%;
+}
+
+.open-hr {
+    text-align: center;
+}
+
+.open-hr p {
+    margin: auto;
+    line-height: 3;
+}
+
+.social-media {
+    text-align: right;
+}
