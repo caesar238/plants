@@ -5,10 +5,9 @@
     list-style: none;
 }
 
-.backgr-img {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
+body {
+    background-image: url('/images/Background-img.jpeg');
+    background-size: 100%;
 }
 
 /* Navigation Bar */
@@ -259,6 +258,9 @@ hr {
 }
 
 @media screen and (max-width:990px) {
+    .mycontainer {
+        padding: 0 30px;
+    }
     .hamburger {
         position: relative;
         z-index: 1;
