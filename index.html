@@ -29,30 +29,30 @@
     </div>
     <!-- Navigation Bar -->
     <div class="mycontainer">
-        <nav class="navb">
             <div class="navbar-brand">
                 <i class="fa-solid fa-leaf"></i>
                 <div class="logo-text">QuaTangCuocSong</div>
             </div>
             <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <ul class="nav-items">
-                <li><a href="#" class="links">Trang chủ</a></li>
-                <li><a href="#" class="links">Quà tặng</a></li>
-                <li><a href="#" class="links">Chăm sóc cây kiểng</a></li>
-            </ul>
-        </nav>
+            <nav class="navb">
+                <ul class="nav-items">
+                    <li><a href="#" class="links">Trang chủ</a></li>
+                    <li><a href="#" class="links">Quà tặng</a></li>
+                    <li><a href="#" class="links">Chăm sóc cây kiểng</a></li>
+                </ul>
+            </nav>
     </div>
     <!-- Title Section -->
     <div class="text-title">
         <h1 class="head-text1">Tìm cây kiểng mini?</h1>
         <h3 class="head-text2">Ở đây có mọi loại cây, ở mọi loại giá mà bạn cần</h3>
         <a href="#hero-section" class="btn buy-btn btn-lg btn-outline-dark">Lựa ngay</a>
-        </div>
-        </section>
+    </div>
+</section>
         <!-- Hero Section #1 -->
         <section id="hero-section">
             <h1 class="hero-title">Hàng mới về</h1>
@@ -181,7 +181,7 @@
                     <p class="footer-text">Thứ 7: 08.00 - 11.00</p>
                     <p class="footer-text">Chủ Nhật & Lễ: Nghỉ</p>
                 </div>
-                <div class="social-media col-lg-4 col-md-4 col-sm-6">
+                <div class="social-media col-lg-4 col-md-4">
                     <h1>Theo dõi thêm tại</h1>
                     <div class="ico-list">
                     <a href="#" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
@@ -199,6 +199,15 @@
 
     <!-- CSS, JS Bootstrap v5.3-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- My Own JS -->
+    <script src="app.js">
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-items");
+            navBar.classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>

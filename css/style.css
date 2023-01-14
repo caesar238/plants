@@ -13,15 +13,18 @@
 
 /* Navigation Bar */
 .mycontainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100px;
+    width: 100%;
+    padding: 0 100px;
 }
 
 .navbar-brand {
     cursor: pointer;
-    padding: 0;
-    margin: 0;
     text-align: center;
     font-family: 'Monserrat', sans-serif;
     font-size: 3rem;
@@ -43,10 +46,10 @@
 }
 
 .navb {
-    padding: 0 4rem;
     height: 100px;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
 }
 
@@ -63,7 +66,7 @@
 }
 
 .links {
-    display: inline-block;
+    display: block;
     font-size: 1.2rem;
     text-decoration: none;
     padding: 15px 40px;
@@ -151,6 +154,7 @@ hr {
 }
 
 .hero-img {
+    cursor: pointer;
     max-width: 100%;
     height: 400px;
     margin: 0 auto;
@@ -170,6 +174,7 @@ hr {
     text-decoration: none;
     display: block;
     font-size: 1.5rem;
+    height: 70px ;
     font-weight: 700;
 }
 
@@ -185,7 +190,7 @@ hr {
     color: #000;
     text-decoration: line-through;
     display: inline-block;
-    margin-left: 3rem;
+    margin: 0 auto 0 2rem;
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -198,6 +203,7 @@ hr {
 }
 
 .tag-img-new {
+    cursor: pointer;
     text-decoration: none;
     color: #fff;
     position: absolute;
@@ -209,6 +215,7 @@ hr {
 }
 
 .tag-img-hot {
+    cursor: pointer;
     text-decoration: none;
     color: #fff;
     position: absolute;
@@ -248,18 +255,53 @@ hr {
 }
 
 .footer-text {
-    width: 50%;
+    width: 80%;
 }
 
-.open-hr {
-    text-align: center;
-}
+@media screen and (max-width:990px) {
+    .hamburger {
+        position: relative;
+        z-index: 1;
+        display: block;
+        cursor: pointer;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 5px 7px;
+    }
+    
+    .hamburger .line  {
+        background-color: #fff;
+        width: 40px;
+        height: 3px;
+        margin: 7px 0;
+    }
 
-.open-hr p {
-    margin: auto;
-    line-height: 3;
-}
+    .navb {
+        position: absolute;
+        left:0;
+        right:0;
+        width: 100%;
+    }
 
-.social-media {
-    text-align: right;
+    .nav-items {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        display: block;
+        align-items: center;
+        top: 100px;
+        width: 100%;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .links {
+        margin: 15px auto 0 auto;
+    }
+
+    .nav-items.active {
+        height: 230px;
+        transition: all 0.35s ease;
+        opacity: 1;
+    }
 }
