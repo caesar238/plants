@@ -10,7 +10,7 @@
 /* Background images */
 
 body {
-    background-image: url('.../images/Background-img.jpeg');
+    background-image: url('../images/Background-img.jpeg');
     font-family: 'Monserrat', sans-serif;
     background-size: 100%;
 }
